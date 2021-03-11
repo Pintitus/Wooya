@@ -1,0 +1,446 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>1.3. 一、Ubuntu安装sphinx &mdash; Wooya 1.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1.8. 冬天" href="../%E5%86%AC/contents.html" />
+    <link rel="prev" title="1.2. 夏季" href="../%E5%A4%8F/contents.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Wooya
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">1. 2020年</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../%E6%98%A5/contents.html">1.1. 春季</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../%E5%A4%8F/contents.html">1.2. 夏季</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. 一、Ubuntu安装sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python">1.3.1. 1.一定要下载3.6+版本的python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1.3.2. 2.安装依赖环境</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx">1.3.3. 3.安装sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1.4. 二、创建文档工程</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">1.4.1. 1.创建工程文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">1.4.2. 2.快速创建文档</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">1.4.3. 3.分析目录</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">1.5. 三、修改网页主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">1.6. 四、让Sphinx支持中文全文搜索</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#autoconf-2-64">1.6.1. 1.autoconf-2.64安装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coreseek">1.6.2. 2.coreseek安装</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#markdownsphinx">1.7. 五、使用Markdown编写Sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#myst-parser">1.7.1. 安装myst-parser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">1.7.2. 2.使能myst-parser</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../%E5%86%AC/contents.html">1.8. 冬天</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">2. 关于</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Wooya</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html"><span class="section-number">1. </span>2020年</a> &raquo;</li>
+        
+      <li><span class="section-number">1.3. </span>一、Ubuntu安装sphinx</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/2002/秋/contents.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ubuntusphinx">
+<h1><span class="section-number">1.3. </span>一、Ubuntu安装sphinx<a class="headerlink" href="#ubuntusphinx" title="Permalink to this headline">¶</a></h1>
+<p>​	Sphinx不是开发搜索功能的软件，而是生成文档的工具。它使用reStructuredText编写文档，这是一种类似Markdown的简单标记语言。</p>
+<div class="section" id="python">
+<h2><span class="section-number">1.3.1. </span>1.一定要下载3.6+版本的python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p>​		这是Read the Docs的文档中说明的。</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
+$ tar -xvf Python-3.6.8.tgz
+$ <span class="nb">cd</span> Python-3.6.8.tgz
+$ ./configure
+$ make
+$ make install
+</pre></div>
+</div>
+<p>​		并查看python的版本，因此在使用python命令的时候使用python3.6</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># linux @ linux in ~/Documents/docs/source [21:09:36] </span>
+$ python
+Python <span class="m">2</span>.7.6 <span class="o">(</span>default, Mar <span class="m">22</span> <span class="m">2014</span>, <span class="m">22</span>:59:38<span class="o">)</span> 
+<span class="o">[</span>GCC <span class="m">4</span>.8.2<span class="o">]</span> on linux2
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt; 
+
+<span class="c1"># linux @ linux in ~/Documents/docs/source [21:09:42] </span>
+$ python3
+Python <span class="m">3</span>.4.0 <span class="o">(</span>default, Apr <span class="m">11</span> <span class="m">2014</span>, <span class="m">13</span>:05:18<span class="o">)</span> 
+<span class="o">[</span>GCC <span class="m">4</span>.8.2<span class="o">]</span> on linux
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt; 
+
+<span class="c1"># linux @ linux in ~/Documents/docs/source [21:09:48] </span>
+$ python3.6
+Python <span class="m">3</span>.6.8 <span class="o">(</span>default, Mar  <span class="m">9</span> <span class="m">2021</span>, <span class="m">09</span>:21:57<span class="o">)</span> 
+<span class="o">[</span>GCC <span class="m">4</span>.8.4<span class="o">]</span> on linux
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt; 
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">1.3.2. </span>2.安装依赖环境<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1">#Read the Docs提示，你在安装的时候直接下载不用默认下载的依赖，需要设置依赖的版本如下</span>
+<span class="nv">sphinx</span><span class="o">==</span><span class="m">3</span>.4.3
+<span class="nv">sphinx_rtd_theme</span><span class="o">==</span><span class="m">0</span>.5.1
+readthedocs-sphinx-search<span class="o">==</span><span class="m">0</span>.1.0rc3
+
+<span class="c1">#如果你的pip版本达不到要求，也要升级pip到21.0.1版本</span>
+$ sudo pip3 install --upgrade pip
+$ sudo apt install python3-pip
+</pre></div>
+</div>
+</div>
+<div class="section" id="sphinx">
+<h2><span class="section-number">1.3.3. </span>3.安装sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo pip3 install <span class="nv">sphinx</span><span class="o">==</span><span class="m">3</span>.4.3
+	<span class="c1">#但是发现下载的sphinx的版本是1.2.2</span>
+$ sudo pip3 install --upgrade sphinx
+	<span class="c1">#升级到3.5.2，就可以解决掉一些问题了</span>
+$ pip install <span class="nv">sphinx_rtd_theme</span><span class="o">==</span><span class="m">0</span>.5.1	<span class="c1">#安装主题环境模块</span>
+$ pip install readthedocs-sphinx-search<span class="o">==</span><span class="m">0</span>.1.0rc3	<span class="c1">#安装查询脚本</span>
+</pre></div>
+</div>
+<p>​	好了，现在你的Ubuntu里面有sphinx软件了，就可以创建文档工程了。</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h1><span class="section-number">1.4. </span>二、创建文档工程<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id3">
+<h2><span class="section-number">1.4.1. </span>1.创建工程文档<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>​	随便找一个你想要的将文档存储的目录下</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ mkdir ~/Documents/docs
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2><span class="section-number">1.4.2. </span>2.快速创建文档<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> Documents/docs
+$ sphinx-quickstart		<span class="c1">#快速创建工程启动命令</span>
+$ make html				<span class="c1">#编译生成文档网页</span>
+</pre></div>
+</div>
+<p><img alt="image-20210310112028257" src="../../_images/1_mkdir.png" /></p>
+</div>
+<div class="section" id="id5">
+<h2><span class="section-number">1.4.3. </span>3.分析目录<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image-20210310103033490" src="../../_images/2_tree.png" /></p>
+<p>目录很简单，我们重点注意的文件是source目录和build目录。</p>
+<p><code class="docutils literal notranslate"><span class="pre">source/index.rst</span></code> :用于编写文档。</p>
+<p><code class="docutils literal notranslate"><span class="pre">source/conf.py</span></code> :用于配置工程，比如添加文档页面的主题等。</p>
+<p><code class="docutils literal notranslate"><span class="pre">build/html/index.html</span></code>:是我们编译index.rst文件以后生成相对应的文档页面。</p>
+<p><code class="docutils literal notranslate"><span class="pre">build/html/_sources/index.html</span></code>:是编译过后生成的文档，我们可以用它来控制文档的版本。</p>
+<p><code class="docutils literal notranslate"><span class="pre">make.bat</span></code>:使用 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> 可以取代 <code class="docutils literal notranslate"><span class="pre">sphinx-build</span> <span class="pre">-b</span> <span class="pre">html</span></code></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h1><span class="section-number">1.5. </span>三、修改网页主题<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h1>
+<p>​	在source/conf.py文件中添加如下代码可以修改页面主题风格。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+
+<span class="c1">#html_theme = &#39;default&#39;</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_rtd_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
+</pre></div>
+</div>
+<p><img alt="image-20210310142937351" src="../../_images/3_theme_html.png" /></p>
+</div>
+<div class="section" id="id7">
+<h1><span class="section-number">1.6. </span>四、让Sphinx支持中文全文搜索<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h1>
+<p>​		并不是sphinx这个软件不能写中文，而是文档里有搜索引擎功能</p>
+<div class="section" id="autoconf-2-64">
+<h2><span class="section-number">1.6.1. </span>1.autoconf-2.64安装<a class="headerlink" href="#autoconf-2-64" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ wget ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+$ tar -xvf autoconf-2.69.tar.gz
+$ ./configure
+$ make <span class="o">&amp;&amp;</span> make install
+</pre></div>
+</div>
+</div>
+<div class="section" id="coreseek">
+<h2><span class="section-number">1.6.2. </span>2.coreseek安装<a class="headerlink" href="#coreseek" title="Permalink to this headline">¶</a></h2>
+<p>​		首先获取并安装mmseg-3.2.14.tar.gz文件</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ tar -xzvf coreseek-3.2.14.tar.gz
+$ cd coreseek-3.2.14
+$ ls 
+	csft-3.2.14 mmseg-3.2.14 README.txt testpack
+$ mkdir /usr/local/mmseg
+$ cd mmseg-3.2.14
+$ aclocal
+$ libtoolize --force
+$ automake --add-missing
+$ autoconf
+$ autoheader
+$ make clean
+		...
+        rm -f *.o
+        rm -f *.lo
+        make[1]: Leaving directory `/home/linux/mmseg-3.2.14/src&#39;
+        make[1]: Entering directory `/home/linux/mmseg-3.2.14&#39;
+        rm -rf .libs _libs
+        rm -f *.lo
+        make[1]: Leaving directory `/home/linux/mmseg-3.2.14&#39;
+$ ./configure --prefix=/usr/local/mmseg
+		...
+		config.status: executing default commands
+        ------------------------------------------------------------------------
+        Configuration:
+
+          Source code location:       .
+          Compiler:                   gcc
+          Compiler flags:             -g -O2
+          Host System Type:           i686-pc-linux-gnu
+          Install path:               /usr/local/mmseg
+
+          See config.h for further configuration information.
+        ------------------------------------------------------------------------
+$ make 
+$ sudo make install
+$ sudo cp -f src/*/*.h /usr/local/mmseg/include/mmseg/
+
+#安装
+$ cd ..
+$ cd csft-3.2.14
+$ bash buildconf.sh
+$ aclocal
+$ libtoolize --force
+$ automake --add-missing
+$ autoconf
+$ autoheader
+$ perl -pi -e &#39;s/lpthread/lpthread -liconv/g&#39; src/Makefile*
+$ make clean #此时如有错误可忽略不管
+$ ./configure --prefix=/usr/local/coreseek --without-unixodbc --with-mmseg --with-mmseg-includes=/usr/local/mmseg/include/mmseg/ --with-mmseg-libs=/usr/local/mmseg/lib/ --with-mysql
+$ make
+$ make install
+cp /usr/local/coreseek/etc/sphinx.conf.dist /usr/local/coreseek/etc/csft.conf
+
+#测试mmseg分词和coreseek搜索:
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="markdownsphinx">
+<h1><span class="section-number">1.7. </span>五、使用Markdown编写Sphinx<a class="headerlink" href="#markdownsphinx" title="Permalink to this headline">¶</a></h1>
+<p>​		Sphinx 默认是使用reStructuredText(简称reST) 格式进行写作，喜欢Markdown格式可以使用Recommonmark插件来实现。</p>
+<ol class="simple">
+<li></li>
+</ol>
+<div class="section" id="myst-parser">
+<h2><span class="section-number">1.7.1. </span>安装myst-parser<a class="headerlink" href="#myst-parser" title="Permalink to this headline">¶</a></h2>
+<p>可以在项目中使用MyST 编写，它作为MyST markdown语言的解析器</p>
+</div>
+<div class="section" id="id8">
+<h2><span class="section-number">1.7.2. </span>2.使能myst-parser<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>在<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>文件中加入</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;myst_parser&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip install myst-parser
+  WARNING: The script markdown-it is installed <span class="k">in</span> <span class="s1">&#39;/home/linux/.local/bin&#39;</span> which is not on PATH.
+  Consider adding this directory to PATH or, <span class="k">if</span> you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script myst-anchors is installed <span class="k">in</span> <span class="s1">&#39;/home/linux/.local/bin&#39;</span> which is not on PATH.
+  Consider adding this directory to PATH or, <span class="k">if</span> you prefer to suppress this warning, use --no-warn-script-location.
+</pre></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../%E5%86%AC/contents.html" class="btn btn-neutral float-right" title="1.8. 冬天" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../%E5%A4%8F/contents.html" class="btn btn-neutral float-left" title="1.2. 夏季" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, zhangyifan.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
